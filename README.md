@@ -1,12 +1,17 @@
 # vue-folder-structure
 
 
+# vue-large-scale-folder-structure
+
+# vue-js Vuex Vue-router axios vue-notification
 Vue js large scale folder structure
 
 created by sureshapn (sureshapn.m@gmail.com)
 
 Vuex, Vue-router, axios
 
+
+develop large scale vue js app using this code structure.
 
 
 Please contribute and develop.
