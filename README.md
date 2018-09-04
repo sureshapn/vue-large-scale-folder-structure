@@ -15,6 +15,9 @@ develop large scale vue js app using this code structure.
 
 
 Please contribute and develop.
+## For SSR Server Side Rendering
+Use branch SSR
+
 ## Project setup
 ```
 npm install
