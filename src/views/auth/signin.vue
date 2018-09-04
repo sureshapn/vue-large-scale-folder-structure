@@ -45,7 +45,7 @@
   }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .signin-form {
     width: 400px;
     margin: 30px auto;

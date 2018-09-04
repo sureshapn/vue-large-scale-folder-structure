@@ -5,7 +5,8 @@ import dashboardRouter from './modules/dashboard';
 
 Vue.use(Router);
 
-export default new Router({
+export const createRouter = () => {
+	return new Router({
   mode: 'history',
   routes: [
     { path: '/', component: WelcomePage },
@@ -15,3 +16,4 @@ export default new Router({
     { path: '*', redirect: '/', hidden: true },
   ],
 });
+}

@@ -37,7 +37,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style>
   #header {
     height: 56px;
     display: flex;

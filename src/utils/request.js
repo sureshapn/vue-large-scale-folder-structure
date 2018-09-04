@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { Message } from 'element-ui';
-import store from '@/store';
-import config from '@/constants';
+import config from '../constants';
 
 // create an axios instance
 const service = axios.create({
@@ -12,7 +11,7 @@ const service = axios.create({
 // request interceptor
 service.interceptors.request.use(
   (serviceConfig) => {
-    if (store.getters.token) {
+    if (this.$store.getters.token) {
       // serviceConfig.headers['X-Token'] = getToken();
     }
     return serviceConfig;

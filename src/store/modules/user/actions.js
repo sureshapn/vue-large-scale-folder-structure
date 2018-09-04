@@ -1,9 +1,9 @@
 
-import { loginByUsername, logout, getUserInfo } from '@/api/login';
+import { loginByUsername, logout, getUserInfo } from '../../../api/login';
 
 export default {
 
-  async LoginByUsername({ commit }, userInfo) {
+   async LoginByUsername({ commit }, userInfo) {
     try {
       const token = await loginByUsername(userInfo);
       commit('SET_TOKEN', token);

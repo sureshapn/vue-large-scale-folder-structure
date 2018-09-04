@@ -2,12 +2,13 @@
 
 import actions from './actions';
 
-const user = {
-  state: {
+export default {
+  namespaced: true,
+  state: () => ({
     user: '',
     name: '',
     token: '',
-  },
+  }),
 
   mutations: {
     SET_TOKEN: (state, token) => {
@@ -23,5 +24,3 @@ const user = {
 
   actions,
 };
-
-export default user;
