@@ -1,0 +1,6 @@
+{
+  "appId": "com.example.vuestr1",
+  "appName": "vue-folder-structure",
+  "bundledWebRuntime": false,
+  "webDir": "dist"
+}

@@ -5,9 +5,32 @@
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
       <router-link to="/signin">Sign In</router-link>
+      <button v-on:click="showInfo" >Info</button>
     </div>
   </div>
 </template>
+
+<script>
+import { Plugins } from '@capacitor/core';
+const { Device } = Plugins;
+export default {
+  data() {
+      return {
+      };
+  },
+  methods: {
+    async showInfo() {
+      const info = await Device.getInfo();
+       this.$notify({
+          title: 'Info',
+          message: `Model: ${info.model}, platform: ${info.platform}, manufacturer: ${info.manufacturer}, batteryLevel: ${info.batteryLevel}`,
+          duration: 0
+        });
+       console.log(info);
+    }
+  }
+}
+</script>
 
 <style scoped>
   #welcome {
